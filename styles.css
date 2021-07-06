@@ -1,0 +1,282 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Reset css
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/*article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}*/
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  color: red;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #eeeff1;
+  overflow-x: hidden;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Wrapper */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30% 30% 30%;
+  width: 100vw;
+  height: 100vh;
+  grid-gap: 20px;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  min-height: 100%;
+}
+
+/* Contact card */
+
+.contact-card {
+  display: flex;
+  position: relative;
+  background-color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Contact details */
+
+.contact-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.contact-details-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.contact-details-address {
+  margin-bottom: 0.6rem;
+}
+
+.contact-details-company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.contact-details-company-address {
+  margin-bottom: 0.4rem;
+}
+
+/* Contact img */
+
+.contact-img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-img-style {
+  border-radius: 50%;
+  margin-bottom: 0.6rem;
+  object-fit: cover;
+}
+
+/* Contact editing section */
+
+.contact-editing {
+  display: flex;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.8rem;
+  cursor: pointer;
+}
+
+/* Adding contact section */
+
+.adding-contact {
+  display: flex;
+  font-size: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.adding-contact-cross {
+  border: 2px solid #049dd9;
+  color: #049dd9;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*-----------------Responsive section-----------*/
+
+@media (max-width: calc(950 / 16 * 1rem)) {
+  /* Tablets */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adding-contact {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: calc(600 / 16 * 1rem)) {
+  /* Phones */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adding-contact {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: calc(320 / 16 * 1rem)) {
+  /* Iphone SE*/
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adding-contact {
+    font-size: 2rem;
+  }
+}
