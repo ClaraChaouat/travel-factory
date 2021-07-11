@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div id="main-container" class="wrapper">
         <!-- contact card-->
-        <div class="contact-card john-smith">
+        <div id="john-smith" class="contact-card  john-smith">
             <!-- contact img -->
             <div class="contact-img">
                 <div class="contact-img-container"><img class="contact-img-style" src="img/john-smith.jpg"
@@ -24,7 +24,14 @@
             <!-- contact details-->
             <div class="contact-details">
                 <div class="contact-details-name"> John Smith</div>
-                <div class="contact-details-address"> Address</div>
+                <div class="contact-details-address"><img src="img/map-marker.svg" alt="map marker icon"></img> Riviera
+                    State 32/106</div>
+                <div class="contact-details-geoloc">
+                    <span>Lt:</span>
+                    <span data-id="contact-geoloc-lat" class="contact-lat"></span>
+                    <span>Lng:</span>
+                    <span data-id="contact-geoloc-long" class="contact-long"></span>
+                </div>
                 <div class="contact-details-company-name"> Twitter, Inc.</div>
                 <div class="contact-details-company-address"> 795 Folsom Ave, Suite 600 <br> San Francisco, CA 94107
                 </div>
@@ -33,48 +40,64 @@
             <!-- Contact editing section-->
             <div class="contact-editing">
 
-                <button class="editing-contact"><img src="img/pen.svg"></img></button>
-                <button class"remove-contact"><img class"remove-contact" src="img/trash.svg"></img></button>
+                <button class="editing-contact"><img src="img/pen.svg" alt="Edit button"></img></button>
+                <button class="js-remove-contact remove-contact"><img src="img/trash.svg"
+                        alt="Delete button"></img></button>
             </div>
 
         </div>
-         <!-- contact card-->
+        <!-- contact card-->
         <div class="contact-card alex-jonathan">
-             <!-- contact img -->
+            <!-- contact img -->
             <div class="contact-img">
                 <div class="contact-img-container"><img class="contact-img-style" src="./img/alex jonathan.jpg"
                         alt="alex jonathan profile picture"></img></div>
                 <div class="contact-title">CEO</div>
             </div>
-               <!-- contact details-->
+            <!-- contact details-->
             <div class="contact-details">
                 <div class="contact-details-name"> Alex Jonathan</div>
-                <div class="contact-details-address"> Address</div>
+                <div class="contact-details-address"><img src="img/map-marker.svg" alt="map marker icon"></img> Riviera
+                    State 32/10</div>
+                <div class="contact-details-geoloc">
+                    <span>Lt:</span>
+                    <span data-id="contact-geoloc-lat2" class="contact-lat"></span>
+                    <span>Lng:</span>
+                    <span data-id="contact-geoloc-long2" class="contact-long"></span>
+                </div>
                 <div class="contact-details-company-name"> Twitter, Inc.</div>
                 <div class="contact-details-company-address"> 795 Folsom Ave, Suite 600 <br> San Francisco, CA 94107
                 </div>
                 <div class="contact-details-phone-number">P: (123) 456-7890</div>
             </div>
-             <!-- Contact editing section-->
+            <!-- Contact editing section-->
             <div class="contact-editing">
 
-                <button class="editing-contact"><img src="img/pen.svg"></img></button>
-                <button class"remove-contact"><img class"remove-contact" src="img/trash.svg"></img></button>
+                <button class="editing-contact"><img src="img/pen.svg" alt="Edit button"></img></button>
+                <button class="js-remove-contact remove-contact"><img src="img/trash.svg"
+                        alt="Delete button"></img></button>
             </div>
 
         </div>
-          <!-- contact card-->
+        <!-- contact card-->
         <div class="contact-card monica-smith">
-              <!-- contact img-->
+            <!-- contact img-->
             <div class="contact-img">
                 <div class="contact-img-container"><img class="contact-img-style" src="./img/monica smith.jpg"
                         alt="monica smith profile picture"></img></div>
                 <div class="contact-title">Marketing manager</div>
             </div>
-              <!-- contact details-->
+            <!-- contact details-->
             <div class="contact-details">
                 <div class="contact-details-name"> Monica Smith</div>
-                <div class="contact-details-address"> Address</div>
+                <div class="contact-details-address"><img src="img/map-marker.svg" alt="map marker icon"></img> Riviera
+                    State 32/10</div>
+                <div class="contact-details-geoloc">
+                    <span>Lt:</span>
+                    <span data-id="contact-geoloc-lat3" class="contact-lat"></span>
+                    <span>Lng:</span>
+                    <span data-id="contact-geoloc-long3" class="contact-long"></span>
+                </div>
                 <div class="contact-details-company-name"> Twitter, Inc.</div>
                 <div class="contact-details-company-address"> 795 Folsom Ave, Suite 600 <br> San Francisco, CA 94107
                 </div>
@@ -84,7 +107,8 @@
             <div class="contact-editing">
 
                 <button class="editing-contact"><img src="img/pen.svg"></img></button>
-                <button class"remove-contact"><img class"remove-contact" src="img/trash.svg"></img></button>
+                <button class="js-remove-contact remove-contact"><img src="img/trash.svg"
+                        alt="Delete button"></img></button>
             </div>
 
         </div>
@@ -99,125 +123,176 @@
             <!-- contact details-->
             <div class="contact-details">
                 <div class="contact-details-name"> Michael Zimber</div>
-                <div class="contact-details-address"> Address</div>
+                <div class="contact-details-address"><img src="img/map-marker.svg" alt="map marker icon"></img> Riviera
+                    State 32/10</div>
+                <div class="contact-details-geoloc">
+                    <span>Lt:</span>
+                    <span data-id="contact-geoloc-lat4" class="contact-lat"></span>
+                    <span>Lng:</span>
+                    <span data-id="contact-geoloc-long4" class="contact-long"></span>
+                </div>
                 <div class="contact-details-company-name"> Twitter, Inc.</div>
                 <div class="contact-details-company-address"> 795 Folsom Ave, Suite 600 <br> San Francisco, CA 94107
                 </div>
                 <div class="contact-details-phone-number">P: (123) 456-7890</div>
             </div>
-             <!-- Contact editing section-->
+            <!-- Contact editing section-->
             <div class="contact-editing">
 
-                <button class="editing-contact"><img src="img/pen.svg"></img></button>
-                <button class"remove-contact"><img class"remove-contact" src="img/trash.svg"></img></button>
+                <button class="editing-contact"><img src="img/pen.svg" alt="Edit button"></img></button>
+                <button class="js-remove-contact remove-contact"><img src="img/trash.svg"
+                        alt="Delete button"></img></button>
             </div>
 
         </div>
-         <!-- contact card-->
+        <!-- contact card-->
         <div class="contact-card sandra-smith">
-             <!-- contact img-->
+            <!-- contact img-->
             <div class="contact-img">
                 <div class="contact-img-container"><img class="contact-img-style" src="./img/sandra smith.jpg"
                         alt="sandra smith profile picture"></img></div>
                 <div class="contact-title">Graphics designer</div>
             </div>
-             <!-- contact details-->
+            <!-- contact details-->
             <div class="contact-details">
                 <div class="contact-details-name"> Sandra Smith</div>
-                <div class="contact-details-address"> Address</div>
+                <div class="contact-details-address"><img src="img/map-marker.svg" alt="map marker icon"></img> Riviera
+                    State 32/10</div>
+                <div class="contact-details-geoloc">
+                    <span>Lt:</span>
+                    <span data-id="contact-geoloc-lat5" class="contact-lat"></span>
+                    <span>Lng:</span>
+                    <span data-id="contact-geoloc-long5" class="contact-long"></span>
+                </div>
                 <div class="contact-details-company-name"> Twitter, Inc.</div>
                 <div class="contact-details-company-address"> 795 Folsom Ave, Suite 600 <br> San Francisco, CA 94107
                 </div>
                 <div class="contact-details-phone-number">P: (123) 456-7890</div>
             </div>
-               <!-- Contact editing section-->
+            <!-- Contact editing section-->
             <div class="contact-editing">
 
-                <button class="editing-contact"><img src="img/pen.svg"></img></button>
-                <button class"remove-contact"><img class"remove-contact" src="img/trash.svg"></img></button>
+                <button class="editing-contact"><img src="img/pen.svg" alt="Edit button"></img></button>
+                <button class="js-remove-contact remove-contact"><img src="img/trash.svg"
+                        alt="Delete button"></img></button>
             </div>
 
         </div>
-          <!-- contact card-->
+        <!-- contact card-->
         <div class="contact-card janet-carton">
-             <!-- contact img-->
+            <!-- contact img-->
             <div class="contact-img">
                 <div class="contact-img-container"><img class="contact-img-style" src="./img/janeth carton.jpg"
                         alt="alex jonathan profile picture"></img></div>
                 <div class="contact-title">Graphics Designer</div>
             </div>
-             <!-- contact details-->
+            <!-- contact details-->
             <div class="contact-details">
                 <div class="contact-details-name"> Janet Carton</div>
-                <div class="contact-details-address"> Address</div>
+                <div class="contact-details-address"><img src="img/map-marker.svg" alt="map marker icon"></img> Riviera
+                    State 32/10</div>
+                <div class="contact-details-geoloc">
+                    <span>Lt:</span>
+                    <span data-id="contact-geoloc-lat6" class="contact-lat"></span>
+                    <span>Lng:</span>
+                    <span data-id="contact-geoloc-long6" class="contact-long"></span>
+                </div>
                 <div class="contact-details-company-name"> Twitter, Inc.</div>
                 <div class="contact-details-company-address"> 795 Folsom Ave, Suite 600 <br> San Francisco, CA 94107
                 </div>
                 <div class="contact-details-phone-number">P: (123) 456-7890</div>
             </div>
-             <!-- Contact editing section-->
+            <!-- Contact editing section-->
             <div class="contact-editing">
 
-                <button class="editing-contact"><img src="img/pen.svg"></img></button>
-                <button class"remove-contact"><img class"remove-contact" src="img/trash.svg"></img></button>
+                <button class="editing-contact"><img src="img/pen.svg" alt="Edit button"></img></button>
+                <button class="js-remove-contact remove-contact"><img src="img/trash.svg"
+                        alt="Delete button"></img></button>
             </div>
 
         </div>
-         <!-- contact card-->
+        <!-- contact card-->
         <div class="contact-card alex-jonathan">
-             <!-- contact img-->
+            <!-- contact img-->
             <div class="contact-img">
                 <div class="contact-img-container"><img class="contact-img-style" src="./img/alex jonathan.jpg"
                         alt="alex jonathan profile picture"></img></div>
                 <div class="contact-title">CEO</div>
             </div>
-             <!-- contact details-->
+            <!-- contact details-->
             <div class="contact-details">
                 <div class="contact-details-name"> Alex Jonathan</div>
-                <div class="contact-details-address"> Address</div>
+                <div class="contact-details-address"><img src="img/map-marker.svg" alt="map marker icon"></img> Riviera
+                    State 32/10</div>
+                <div class="contact-details-geoloc">
+                    <span>Lt:</span>
+                    <span data-id="contact-geoloc-lat7" class="contact-lat"></span>
+                    <span>Lng:</span>
+                    <span data-id="contact-geoloc-long7" class="contact-long"></span>
+                </div>
                 <div class="contact-details-company-name"> Twitter, Inc.</div>
                 <div class="contact-details-company-address"> 795 Folsom Ave, Suite 600 <br> San Francisco, CA 94107
                 </div>
                 <div class="contact-details-phone-number">P: (123) 456-7890</div>
             </div>
-             <!-- Contact editing section-->
+            <!-- Contact editing section-->
             <div class="contact-editing">
 
-                <button class="editing-contact"><img src="img/pen.svg"></img></button>
-                <button class"remove-contact"><img class"remove-contact" src="img/trash.svg"></img></button>
+                <button class="editing-contact"><img src="img/pen.svg" alt="Edit button"></img></button>
+                <button class="js-remove-contact remove-contact"><img src="img/trash.svg"
+                        alt="Delete button"></img></button>
             </div>
 
         </div>
-         <!-- contact card-->
-        <div class="contact-card john-smith">
+
+        <!-- contact card-->
+
+        <div id="empty-card" class="contact-card john-smith">
             <!-- contact img-->
             <div class="contact-img">
                 <div class="contact-img-container"><img class="contact-img-style" src="img/john-smith.jpg"
                         alt="john smith profile picture"></img></div>
-                <div class="contact-title">Graphic designer</div>
+                <div class="contact-title"><span class="input" type="text" role="textbox" contenteditable>Graphic
+                        Designer</span></div>
             </div>
             <!-- contact details-->
             <div class="contact-details">
-                <div class="contact-details-name"> John Smith</div>
-                <div class="contact-details-address"> Address</div>
-                <div class="contact-details-company-name"> Twitter, Inc.</div>
-                <div class="contact-details-company-address"> 795 Folsom Ave, Suite 600 <br> San Francisco, CA 94107
+                <div class="contact-details-name"><span class="input" type="text" role="textbox" contenteditable>John
+                        Smith</span>
                 </div>
-                <div class="contact-details-phone-number">P: (123) 456-7890</div>
+                <div class="contact-details-address"><img src="img/map-marker.svg" alt="map marker icon"></img><span
+                        class="input" type="text" role="textbox" contenteditable> Riviera
+                        State 32/10</span></div>
+                <div class="contact-details-geoloc">
+                    <span>Lt:</span>
+                    <span class="input" type="text" role="textbox" contenteditable data-id="contact-geoloc-lat8"
+                        class="contact-lat"></span>
+                    <span>Lng:</span>
+                    <span class="input" type="text" role="textbox" contenteditable data-id="contact-geoloc-long8"
+                        class="contact-long"></span>
+                </div>
+                <div class="contact-details-company-name"><span class="input" type="text" role="textbox"
+                        contenteditable> Twitter, Inc.</span></div>
+                <div class="contact-details-company-address"><span class="input" type="text" role="textbox"
+                        contenteditable> 795 Folsom Ave, Suite 600 <br> San Francisco, CA 94107
+                    </span></div>
+                <div class="contact-details-phone-number"><span class="input" type="text" role="textbox"
+                        contenteditable>P: (123) 456-7890</span></div>
             </div>
-             <!-- Contact editing section-->
+            <!-- Contact editing section-->
             <div class="contact-editing">
 
-                <button class="editing-contact"><img src="img/pen.svg"></img></button>
-                <button class"remove-contact"><img class"remove-contact" src="img/trash.svg"></img></button>
+                <button class="editing-contact"><img src="img/pen.svg" alt="Edit button "></img></button>
+                <button id="js-delete-template" class="js-remove-contact remove-contact"><img src="img/trash.svg"
+                        alt="Delete button"></img></button>
             </div>
-
         </div>
-         <!-- Adding contact section-->
-        <div class="adding-contact">
-            <div class="adding-contact-cross">+</div>
-        </div>
+    </div>
 
+    <!-- Adding contact section-->
+    <div class="adding-contact">
+        <div class=" js-adding-contact-cross adding-contact-cross">+</div>
+    </div>
 
     </div>
     <script src="./scripts.js"></script>

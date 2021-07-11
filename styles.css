@@ -149,6 +149,10 @@ button {
   cursor: pointer;
 }
 
+:root {
+  --card-background-color: white;
+}
+
 /* Wrapper */
 
 .wrapper {
@@ -168,7 +172,7 @@ button {
 .contact-card {
   display: flex;
   position: relative;
-  background-color: white;
+  background-color: var(--card-background-color);
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
@@ -184,11 +188,11 @@ button {
 .contact-details-name {
   font-size: 1.6rem;
   font-weight: bold;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.4rem;
 }
 
 .contact-details-address {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.2rem;
 }
 
 .contact-details-company-name {
@@ -199,6 +203,10 @@ button {
 
 .contact-details-company-address {
   margin-bottom: 0.4rem;
+}
+
+.contact-details-geoloc {
+  margin-bottom: 0.2rem;
 }
 
 /* Contact img */
