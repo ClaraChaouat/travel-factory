@@ -10,6 +10,6 @@
 - Click on the fields to edit the contact details
 
 ## API Request
-- I removed one character from the API key to avoid fraudulent usage of it (otherwise it work!)
+- I removed one character from the API key to avoid fraudulent usage of it (otherwise it works!)
 
 
